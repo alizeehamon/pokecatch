@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes } from '@angular/router';
+import { CollectionsComponent } from './collections/collections.component';
 
 const ROUTES: Routes = [
-  // { path: 'sign-up', component:  },
-  // { path: 'user', component:   },
-  // { path: '', component:   }
+  { path: 'collections', component: CollectionsComponent },
 ];
 
 export { ROUTES };

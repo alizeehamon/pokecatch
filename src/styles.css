@@ -67,3 +67,18 @@ main {
   flex: 1;
   display: flex;
 }
+
+button {
+  font-family: "Koulen", cursive;
+  background-color: #fbc64e;
+  padding: 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #e47104;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin: 1px 0;
+  transition: background-color 200ms ease, box-shadow 200ms ease;
+}
