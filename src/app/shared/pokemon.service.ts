@@ -12,4 +12,8 @@ export class PokemonService {
   getSets(): Observable<any> {
     return this.http.get<any>('https://api.pokemontcg.io/v2/sets')
   }
+
+  getCardsBySet(id:string): Observable<any> {
+    return this.http.get<any>('https://api.pokemontcg.io/v2/cards?q=set.id:'+id)
+  }
 }

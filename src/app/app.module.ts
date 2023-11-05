@@ -9,13 +9,15 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { RequestInterceptor } from 'src/core/request.interceptor';
 import { CollectionsComponent } from './collections/collections.component';
 import { CollectionComponent } from './collection/collection.component';
+import { DisplayCollectionComponent } from './display-collection/display-collection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     CollectionsComponent,
-    CollectionComponent
+    CollectionComponent,
+    DisplayCollectionComponent
   ],
   imports: [
     BrowserModule,

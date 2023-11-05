@@ -17,7 +17,7 @@ export class CollectionComponent implements OnInit {
   }
 
   seeCards(id:string){
-    this.router.navigate(['/collections'], { queryParams: { id:id } })
+    this.router.navigate(['/collection'], { queryParams: { id:id } })
   }
 
 }
