@@ -1,0 +1,120 @@
+.nav {
+  background-color: #e47104;
+  text-align: right;
+  box-shadow: 0 -2px 20px 0px #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.nav a {
+  color: #fcfcfc;
+}
+
+.nav nav {
+  text-align: left;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.nav nav ul,
+.nav nav ul li {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav nav ul {
+  height: 100%;
+}
+
+.nav nav ul li {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.nav nav ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: 'Koulen',cursive;
+  font-size:1.5rem;
+}
+
+.nav nav ul li:hover {
+  background-color: #fbc64e;
+}
+
+.nav nav ul li:hover a {
+  color: #e47104;
+}
+
+.nav nav ul {
+  gap: 20px;
+}
+
+.nav-title {
+  font-family: "Koulen", cursive;
+  padding-left: 5px;
+  font-size: 2rem;
+  color: #fcfcfc;
+  margin-top: 0;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-logo img {
+  padding: 1rem;
+}
+
+.svg-icons {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.svg-icons:hover {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: black;
+}
+
+.button-nav {
+  color: #e47104;
+  border: none;
+  background-color: #e47104;
+  padding-bottom: 1.6rem;
+  width: 2rem;
+  height: 100%;
+}
+
+.button-nav:hover {
+  color: #fbc64e;
+  border: none;
+  background-color: #fbc64e;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-title {
+    display: none;
+  }
+  .nav-logo img {
+    height: 50px;
+    width: 50px;
+  }
+  .nav a {
+    font-size: 0.7rem;
+  }
+
+  .nav nav ul li {
+    cursor: pointer;
+    padding: 0 5px;
+  }
+}

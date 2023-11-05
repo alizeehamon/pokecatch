@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Koulen';
+  src: url('assets/fonts/Koulen/Koulen-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Texturina';
+  src: url('assets/fonts/Texturina/static/Texturina_14pt-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* :root {
+  --dark-orange: #e47104;
+  --lighter-dark-orange: #eb8d1c;
+  --basic-orange: #f3a935;
+  --light-orange: #fbc64e;
+  --white: #fcfcfc;
+  --title-font: "Koulen", cursive;
+  --text-font: "Texturina", serif;
+} */
+
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Texturina", serif;
+}
+
+h1 {
+  font-family: "Koulen", cursive;
+  color: #e47104;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Texturina", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: inline-block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
