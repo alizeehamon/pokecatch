@@ -1,8 +1,6 @@
 <div class="main">
+  <app-search-collection (searchcriteria)="searchThis($event)"></app-search-collection>
   <ul class="cards">
-    <app-collection
-      *ngFor="let collection of collections"
-      [collection]="collection"
-    ></app-collection>
+    <app-collection *ngFor="let collection of collectionsFiltered" [collection]="collection"></app-collection>
   </ul>
 </div>

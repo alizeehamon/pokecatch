@@ -8,23 +8,41 @@ import { Collection } from '../models/collection.model';
   styleUrls: ['./collections.component.css']
 })
 export class CollectionsComponent implements OnInit {
-  public collections : Collection[] = [];
+  public collections: Collection[] = [];
+
+  public collectionsFiltered: Collection[] = [];
+
 
   constructor(public pokemonService: PokemonService) { }
 
   ngOnInit(): void {
-    this.pokemonService.getSets().subscribe(result =>{
+    this.pokemonService.getSets().subscribe(result => {
       result.data.forEach((data: { id: any; name: any; total: any; images: { logo: any; }; }) => {
         this.collections = [
-        ...this.collections,
-        {id:data.id,
-        name:data.name,
-        numberOfCards:data.total,
-        logo:data.images.logo }
+          ...this.collections,
+          {
+            id: data.id,
+            name: data.name,
+            numberOfCards: data.total,
+            logo: data.images.logo
+          }
         ]
+        this.collectionsFiltered = [...this.collections];
       });
     });
 
   }
 
+  searchThis(data: any) {
+    console.log(data);
+    if (!data) {
+      this.collectionsFiltered = this.collections;
+      console.log(this.collectionsFiltered);
+    }
+
+    this.collectionsFiltered = this.collections.filter(
+      pokemon => pokemon?.name.toLowerCase().includes(data.toLowerCase())
+    );
+    console.log(this.collectionsFiltered);
+  }
 }

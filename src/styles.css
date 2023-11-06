@@ -29,6 +29,10 @@ h1 {
   padding: 0;
 }
 
+body {
+  background-color: #fbc64e;
+}
+
 p {
   font-family: "Texturina", serif;
 }
@@ -83,7 +87,7 @@ button {
   transition: background-color 200ms ease, box-shadow 200ms ease;
 }
 
-button:hover{
+button:hover {
   background-color: #e47104;
-  color:#fbc64e;
+  color: #fbc64e;
 }

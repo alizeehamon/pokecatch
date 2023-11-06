@@ -10,6 +10,8 @@ import { RequestInterceptor } from 'src/core/request.interceptor';
 import { CollectionsComponent } from './collections/collections.component';
 import { CollectionComponent } from './collection/collection.component';
 import { DisplayCollectionComponent } from './display-collection/display-collection.component';
+import { SearchCollectionComponent } from './search-collection/search-collection.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,15 +19,17 @@ import { DisplayCollectionComponent } from './display-collection/display-collect
     MenuComponent,
     CollectionsComponent,
     CollectionComponent,
-    DisplayCollectionComponent
+    DisplayCollectionComponent,
+    SearchCollectionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(ROUTES),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [{provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true}],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
