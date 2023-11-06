@@ -3,6 +3,7 @@ export class Pokemon {
    public id: string,
    public name: string,
    public number: string,
+   public rarity: string,
    public image: string
    ) { }
 }

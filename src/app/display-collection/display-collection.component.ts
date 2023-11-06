@@ -18,12 +18,13 @@ export class DisplayCollectionComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       let id = params['id'];
       this.pokemonService.getCardsBySet(id).subscribe(result =>{
-        result.data.forEach((data: { id: any; name: any; number: any; images: any; }) => {
+        result.data.forEach((data: { id: any; name: any; number: any; rarity:any; images: any; }) => {
           this.pokemonsBySet = [
           ...this.pokemonsBySet,
           {id:data.id,
           name:data.name,
           number:data.number,
+          rarity:data.rarity,
           image:data.images.small}
           ]
         });
