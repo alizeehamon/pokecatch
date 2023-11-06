@@ -1,10 +1,11 @@
-.container{
-  margin:2rem;
+.container {
+  background-color: #fcfcfc;
+  margin: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 img {
-  margin:1rem;
+  margin: 1rem;
 }

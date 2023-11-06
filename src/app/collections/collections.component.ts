@@ -34,15 +34,12 @@ export class CollectionsComponent implements OnInit {
   }
 
   searchThis(data: any) {
-    console.log(data);
     if (!data) {
       this.collectionsFiltered = this.collections;
-      console.log(this.collectionsFiltered);
     }
 
     this.collectionsFiltered = this.collections.filter(
       pokemon => pokemon?.name.toLowerCase().includes(data.toLowerCase())
     );
-    console.log(this.collectionsFiltered);
   }
 }
